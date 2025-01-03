@@ -6,65 +6,70 @@
     <title>Joe The Hero</title>
     <style>
         body {
-            background-color: lightblue;
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            text-align: center;
+            background-color: #ADD8E6; /* Light blue background */
             color: #333;
         }
         header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-        }
-        header h1 {
-            font-size: 3em;
-            font-family: 'Arial Black', sans-serif;
-            margin: 0;
-        }
-        header h2 {
-            font-size: 1.5em;
-            font-style: italic;
-            margin-top: 10px;
+            background-color: yellow; /* Yellow background */
+            color: black; /* Text color */
+            text-align: center;
+            padding: 50px 0; /* Makes the header taller */
+            width: 100%; /* Full width */
+            position: fixed; /* Fixes the header to the top */
+            top: 0; /* Ensures it's at the top of the screen */
+            left: 0;
+            z-index: 10; /* Ensures it stays on top of the content */
         }
         .cover-art {
             width: 100%;
-            max-width: 800px;
             height: auto;
-            margin-top: 20px;
         }
         .container {
+            max-width: 800px;
+            margin: 100px auto; /* Adjusted margin to avoid overlap with the header */
             padding: 20px;
-            background-color: white;
+            background: white;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
-            display: inline-block;
+        }
+        .japanese-title {
+            font-size: 24px;
+            color: #333;
             text-align: center;
-            width: 100%;
-        }
-        .link-container {
-            margin-top: 20px;
-        }
-        a {
-            color: #007BFF;
-            text-decoration: none;
-            font-size: 1.2em;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .contact-text {
             margin-top: 10px;
-            font-size: 1.1em;
+        }
+        .contact-btn {
+            display: block;
+            width: 200px;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 20px auto;
+        }
+        .contact-btn:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>JOE THE HERO</h1>
+        <h1>Joe The Hero</h1>
         <h2>Webcomic</h2>
     </header>
+    
+    
+        
+        <!-- Japanese title -->
+        <div class="japanese-title">
+            ジョー・ザ・ヒーロー
+        </div>
+        
+    
 
     <!-- Cover Art -->
     <img src="Untitled1234_20250102235111.png" alt="Cover 1" class="cover-art">
